@@ -1,21 +1,21 @@
 {
-  "name": "GO_team_2",
+  "name": "go_team_2",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://4106677.github.io/GO_team_2",
+  "homepage": "https://4106677.github.io/go_team_2",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /GO_team_2/"
+    "build": "parcel build src/*.html --public-url /go_team_2/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/4106677/GO_team_2.git"
+    "url": "git+https://github.com/4106677/go_team_2.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/4106677/GO_team_2/issues"
+    "url": "https://github.com/4106677/go_team_2/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
