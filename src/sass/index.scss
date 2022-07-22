@@ -1,10 +1,4 @@
-@import './common';
-@import './example';
-
-@import './base/index';
-
-@import './components/index';
-
-@import './utils/index';
-
-@import './layot/index';
+@import './utils/module';
+@import './base/module';
+@import './components/module';
+@import './layout/module';
