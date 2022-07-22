@@ -1,0 +1,26 @@
+.button {
+  display: block;
+  padding: 10px 32px;
+  margin: 0 auto;
+  border: none;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.31;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.button--red {
+  color: #fff;
+  background-color: $primary-accent-color;
+}
+
+.button--white {
+  color: $primary-accent-color;
+  background-color: #fff;
+  transition: background-color $transition;
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+}
