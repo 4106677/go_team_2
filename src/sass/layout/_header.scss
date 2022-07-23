@@ -38,13 +38,14 @@
 
 .mobile-menu__container {
 	z-index: 1;
-  position: fixed;
+  position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   padding-top: 60px;
   padding-left: 0;
   padding-right: 0;
   height: 100vh;
+	max-width: 254px;
   background-color: $mobile-menu-background-color;
   transition: opacity $transition, visibility$transition;
 }
