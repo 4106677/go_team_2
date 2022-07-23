@@ -1,0 +1,226 @@
+
+.contacts{
+    margin-top: 60px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+ 
+}
+.contacts__list {
+    flex-direction: column;
+    width: 280px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    width: 100%;
+    
+      @include tablet {
+        max-width: 768px;
+        width: 100%;
+        display: grid; 
+        grid-template-columns: 224px 224px 224px; 
+        grid-gap:32px; 
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 60px;
+        
+      }
+      @include desktop {
+        max-width: 1200px;
+        display: grid; 
+        grid-template-columns: 368px 368px 368px; 
+        grid-gap:32px; 
+        align-items: center;
+        justify-content: center;
+        
+      }
+}
+
+.contacts__item {
+    
+background-color: #ffffff;
+padding: 40px 40px;
+border-radius: 6px;
+margin-bottom: 20px;
+&:nth-child(3n) {
+    margin-bottom: 0;
+  }
+  @include tablet {
+    max-width: 768px;
+    margin: 0;
+    padding: 40px 32px;
+  }
+}
+
+
+.contacts__representatives {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 16px;
+    background-color:  #F0D1A5;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    
+    @include tablet {
+        max-width: 768px;
+        width: 75px;
+        height: 28px;
+}
+}
+.contacts__representativ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 16px;
+    background: #C2E297;
+    border-radius: 4px; 
+    font-weight: 500;
+    font-size: 12px;
+    color: #FFFFFF;
+    line-height: 1.6;
+    margin-bottom: 20px;
+
+    @include tablet {
+        max-width: 768px;
+        width: 135px;
+        height: 28px;
+}
+}
+.contacts__title{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #000000;
+    margin-bottom: 20px;
+
+    @include tablet {
+        max-width: 768px;
+        font-size: 16px;
+        line-height: 1.6;
+}
+}
+.contacts__text{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #907E82;
+    max-width: 179px;
+    margin-bottom: 24px;
+
+    @include tablet {
+        max-width: 768px;
+        font-size: 16px;
+        line-height: 1.6;
+        width: 159px;
+}
+}
+.contacts__box{
+    border-top: 1px solid rgba(225, 225, 225, 1);
+    border-bottom: 1px solid rgba(225, 225, 225, 1);
+    width: 100%;
+    height: 145px;
+    left: none;
+    right: none;
+    padding: 24px 0;
+    @include tablet {
+        max-width: 768px;
+        height: 173px;
+    }
+}
+.contacts__working{
+    font-weight: 500;
+font-size: 12px;
+line-height: 1.6;
+color: #000000;
+
+@include tablet {
+    max-width: 768px;
+    font-size: 14px;
+    line-height: 1.3;
+}
+@include desktop {
+    max-width: 1200px;
+    font-size: 16px;
+    line-height: 1.16;
+}
+}
+.contacts__time{
+    font-weight: 500;
+font-size: 12px;
+line-height: 1.6;
+color: #FFA5BA;
+
+@include tablet {
+    max-width: 768px;
+    font-size: 14px;
+    line-height: 1.3;
+}
+@include desktop {
+    max-width: 1200px;
+    font-size: 16px;
+    line-height: 1.16;
+}
+}
+.indent{
+ margin-bottom: 20px;
+
+}
+.contacts__call{
+    display: block;
+    font-weight: 500;
+font-size: 12px;
+line-height: 1.5;
+color: #907E82;
+margin-top: 24px;
+
+@include tablet {
+    max-width: 768px;
+    font-size: 14px;
+    line-height: 1.3;
+}
+@include desktop {
+    max-width: 1200px;
+    font-size: 16px;
+    line-height: 1.16;
+}
+}
+.contacts__write{
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #907E82;
+
+    @include tablet {
+        max-width: 768px;
+        font-size: 14px;
+        line-height: 1.3;
+    }
+    @include desktop {
+        max-width: 1200px;
+        font-size: 16px;
+        line-height: 1.16;
+    }
+}
+.button__box{
+    @include tablet {
+        max-width: 768px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+}
+.button__icon-white{
+    fill: #FFFFFF;
+   
+}
+.button__icon-red{
+    fill: rgba(212, 20, 67, 1);
+  
+}
