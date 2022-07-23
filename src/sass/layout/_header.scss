@@ -1,32 +1,96 @@
+.header__container {
+  background-color: transparent;
+  padding-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include tablet {
+    padding-top: 32px;
+  }
+}
 
+.header__menu-list {
+  display: none;
+  @include desktop {
+    display: flex;
+    gap: 35px;
+  }
+}
 
+.header-menu__link {
+  font-weight: 700;
+  line-height: 1.31em;
+	color:#fff;
+	&:hover,
+	&:focus{
+		color: $primary-accent-color;
+	}
+}
 
+.header-menu__button-wrapper {
+  display: flex;
+}
 
-
-
-.header__container{
-
+.logo-link__container {
+  width: 199px;
+  height: 50px;
 }
 
 .mobile-menu__container {
-  display: none;
-	height: 100vh;
-  padding: 0;
+	z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 60px;
+  padding-left: 0;
+  padding-right: 0;
+  height: 100vh;
   background-color: $mobile-menu-background-color;
+  transition: opacity $transition, visibility$transition;
+}
+
+.mobile-menu__open-button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  background-color: transparent;
+	@include desktop{
+		display: none;
+	}
+}
+
+.mobile-menu__close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 .mobile-menu__buy-button {
-	display: flex;
-	margin: 0 auto;
-	margin-bottom: 19px;
-	border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 50px;
+  min-width: 209px;
+  margin-bottom: 19px;
+  border: none;
   border-radius: 22px;
   font-weight: 700;
   line-height: 1.31em;
-	&:hover,
-	&:focus{
-		background-color:rgba(236, 235, 235, 1);
-	}
+  &:hover,
+  &:focus {
+    background-color: rgba(236, 235, 235, 1);
+  }
+}
+
+.mobile-menu__buy-button-icon {
+  margin-left: 20px;
 }
 
 .mobile-menu__list {
@@ -47,9 +111,36 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.28em;
+	&:hover,
+	&:focus{
+		color: $primary-accent-color;
+	}
+}
+
+.table-menu__buy-button {
+  display: none;
+  @include tablet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 32px;
+    height: 50px;
+    min-width: 209px;
+    border: none;
+    border-radius: 22px;
+    font-weight: 700;
+    line-height: 1.31em;
+    &:hover,
+    &:focus {
+      background-color: rgba(236, 235, 235, 1);
+    }
+  }
+}
+
+.table-menu__buy-button-icon {
+  margin-left: 20px;
 }
 
 .current-link {
   color: $primary-accent-color;
 }
-
