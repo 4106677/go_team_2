@@ -1,1 +1,92 @@
-<h1></h1>
+<section class="hero">
+    <div class="container">
+
+        <h1 class="hero__title">ice cream
+            made with
+            <span class="hero__title--red">passion</span> 
+        </h1>
+        <div class="hero__wraper-btns">
+                <a href="#products" class="hero__button--red button--red hero__button button" type="button">
+                    Products
+                </a>         
+                <a href="#about" class="hero__button--white button--white hero__button button" type="button">
+                    How it’s made?
+                </a>
+        </div>
+        <ul class="hero__list list">
+                <li class="hero__item"> 
+                    <p class="hero__item--number">16</p>
+                    <p class="hero__item--name">cafes</p>
+                </li>
+                <li class="hero__item">
+                    <p class="hero__item--number">23</p>
+                    <p class="hero__item--name">food trucks</p>
+                </li>
+        </ul>
+        <div class="main-image">   
+            <picture class="main-image__icecream">
+                <source 
+                srcset="./images/hero/icehero-deks-1x.png 1x,
+                ./images/hero/icehero-deks-2x.png 2x "
+                media="(min-width: 1200px)"  />
+                <source 
+                srcset="
+                ./images/hero/icehero-tab-1x.png 1x,
+                ./images/hero/icehero-tab-2x.png 2x "
+                media="(min-width: 768px)"  />
+                <source 
+                srcset="
+                ./images/hero/icehero-mob-1x.png 1x,
+                ./images/hero/icehero-mob-2x.png 2x "
+                media="(min-width: 320px)" />
+                <img src="./images/hero/icehero-deks-1x.png" 
+                alt="ice-cream" 
+                width="236" 
+                height="557"/>
+            </picture>
+       </div>
+       <div class="bottom-images">   
+        <picture class="bottom-images__milk">
+            <source 
+            srcset="./images/hero/milk-deks-1x.png 1x,
+            ./images/hero/milk-deks-2x.png 2x "
+            media="(min-width: 1200px)"  />
+            <source 
+            srcset="
+            ./images/hero/milk-tab-1x.png 1x,
+            ./images/hero/milk-tab-2x.png 2x "
+            media="(min-width: 768px)"  />
+            <img src="./images/hero/milk-deks-1x.png" 
+            alt="milk" 
+            width="213" 
+            height="216"/>
+        </picture>
+
+        <picture class="bottom-images__girl">
+            <source 
+            srcset="./images/hero/girl-deks-1x.png 1x,
+            ./images/hero/girl-deks-2x.png 2x "
+            media="(min-width: 1200px)"  />
+            <source 
+            srcset="
+            ./images/hero/girl-tab-1x.png 1x,
+            ./images/hero/girl-tab-2x.png 2x "
+            media="(min-width: 768px)"  />
+            <img src="./images/hero/girl-deks-1x.png" 
+            alt="girl" 
+            width="304" 
+            height="241"/>
+        </picture>
+
+
+       </div>
+  <div class="hero-descr">
+    <p class="hero-descr__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+    <a href="#about" class="button hero-descr-btn">
+        <svg class="button__icon" width="6" height="6" >
+            <use href="./images/icons.svg#icon-arrow-right2"></use>        
+        </svg>
+    </a>
+  </div>
+    </div>
+</section>
