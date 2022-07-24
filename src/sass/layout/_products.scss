@@ -2,7 +2,7 @@
   background-color: white;
 }
 .product__label {
-  font-family: 'Titan One';
+  font-family: 'Titan One', cursive;
   font-size: 18px;
   line-height: 1.16;
 
@@ -38,7 +38,6 @@
   }
 }
 .product__list {
-  display: flex;
   flex-direction: column;
   @include tablet {
     gap: 16px;
@@ -59,6 +58,16 @@
   border-radius: 24px;
   padding: 160px 40px 40px;
 
+  &--pink {
+    background-color: #ffb8ca;
+  }
+  &--cream {
+    background-color: #f0d1a5;
+  }
+  &--green {
+    background-color: #c2e297;
+  }
+
   @include mobile {
     width: 280px;
     // padding: 160px 40px 40px;
@@ -78,20 +87,8 @@
   }
 }
 
-.product__item--pink {
-  background-color: #ffb8ca;
-}
-
-.product__item--cream {
-  background-color: #f0d1a5;
-}
-
-.product__item--green {
-  background-color: #c2e297;
-}
-
 .product__subtitle {
-  font-family: 'Titan One';
+  font-family: 'Titan One', cursive;
   font-size: 20px;
   line-height: 1.15;
 
@@ -203,7 +200,7 @@
   content: '...';
   display: block;
 
-  color: white;
+  color: #fff;
   margin-top: 32px;
 }
 .product__text {
