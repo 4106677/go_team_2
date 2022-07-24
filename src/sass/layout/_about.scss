@@ -1,0 +1,116 @@
+.advantages {
+    padding-left: 20px;
+    @include tablet {
+        padding-left: 32px;
+        padding-right: 189px;
+    }
+    @include desktop {
+        padding-left: 16px;
+        padding-right: 96px;
+    }
+}
+
+.advantages__list {
+    flex-direction: column;
+    gap: 32px;
+    @include tablet {
+        flex-direction: row;
+        justify-content: flex-start;
+        // max-width: 527px;
+        gap: 0;
+    }
+}
+
+.advantages__item {
+    width: 100%;
+    &::before {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/about/advantages_img-2-1x.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        @include retina {
+            background-image: url(../images/about/advantages_img-2-2x.png);
+        }
+    }
+    &:first-child {
+        &::before {
+            content: '';
+            display: block;
+            width: 33px;
+            height: 50px;
+            background-image: url(../images/about/advantages_img-1-1x.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            @include retina {
+                background-image: url(../images/about/advantages_img-1-2x.png);
+            }
+        }
+    }
+    &:last-child {
+        &::before {
+            content: '';
+            display: block;
+            width: 44px;
+            height: 50px;
+            background-image: url(../images/about/advantages_img-3-1x.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            @include retina {
+                background-image: url(../images/about/advantages_img-3-2x.png);
+            }
+        }
+    }
+}
+
+.advantages__amount-wrap {
+    width: 98px;
+    height: 56px;
+    margin-bottom: 4px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    @include tablet {
+        margin-top: 36px;
+        margin-bottom: 13px;
+    }
+    @include desktop {
+        margin-top: 40px;
+        margin-bottom: 16px;
+    }
+}
+
+.advantages__amount {
+    font-size: 36px;
+    line-height: 1.14;
+    margin-top: 0;
+    @include tablet {
+        font-size: 48px;
+        line-height: 1.15;
+    }
+    @include desktop {
+        font-size: 58px;
+        line-height: 1.14;
+    }
+}
+
+.advantages__text {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+    max-width: 230px;
+    @include tablet {
+        font-size: 14px;
+        line-height: 1.74;
+        max-width: 180px;
+    }
+    @include desktop {
+        font-size: 16px;
+        line-height: 1.76;
+        letter-spacing: 0.02em;
+        max-width: 317px;
+    }
+}
