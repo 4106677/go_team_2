@@ -3,30 +3,42 @@
 }
 
 .slider {
-  position: relative;
+  margin: 0 auto;
+  width: 280px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   @include tablet {
     width: 620px;
+  }
+
+  @include desktop {
+    width: 968px;
   }
 }
 
 .slider-list {
   margin: 0 auto;
+  display: flex;
+
   flex-direction: column;
-}
-
-.slider-list__item {
-  position: relative;
-
-  @include tablet_max {
-    width: 100%;
-  }
 }
 
 .slider-list__image {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 32px;
+
+  @include tablet {
+    margin-bottom: 20px;
+  }
+
+  @include desktop {
+    margin-bottom: 16px;
+  }
 }
 
 .box {
@@ -34,11 +46,17 @@
   margin: 0 auto;
   padding: 43px 58px 26px 65px;
 
-  width: 280px;
+  @include tablet {
+    width: 514px;
+    padding: 37px 0px 44px 0px;
+  }
+  @include desktop {
+    width: 750px;
+    padding: 47px 0px 39px 0px;
+  }
 }
 
 .box > .slider-list__text {
-  position: relative;
   display: flex;
 
   font-weight: 500;
@@ -47,18 +65,44 @@
   text-align: center;
   /* or 31px */
 
-  // background-image: repeating-linear-gradient(
-  //   180deg,
-  //   #e1e1e1,
-  //   #e1e1e1 30px,
-  //   #e1e1e1 31px
-  // );
-  // background-position: 0 100%;
-  // background-size: 10px 1px;
-  // background-repeat: repeat-x;
+  background-image: url(../images/customer/lines.svg);
+  background-position: 0 60px;
+
+  @include tablet {
+    text-align: center;
+    background-image: repeating-linear-gradient(
+      180deg,
+      #e1e1e1,
+      #e1e1e1 30px,
+      #e1e1e1 31px
+    );
+    background-position: 0 100%;
+    background-size: 100% 1px;
+    background-repeat: repeat-x;
+
+    font-size: 14px;
+    line-height: 2.16;
+  }
+
+  @include desktop {
+    background-image: repeating-linear-gradient(
+      180deg,
+      #e1e1e1,
+      #e1e1e1 30px,
+      #e1e1e1 31px
+    );
+    background-position: 0 100%;
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+
+    font-size: 16px;
+    line-height: 1.86;
+  }
 }
 
 .slider-list__contact {
+  position: relative;
+
   margin-top: 36px;
   font-weight: 500;
   font-size: 14px;
@@ -66,26 +110,54 @@
   /* or 26px */
 
   text-align: center;
+
+  @include tablet {
+    margin-top: 24px;
+
+    font-size: 16px;
+  }
+
+  @include desktop {
+    margin-top: 36px;
+
+    font-size: 20px;
+  }
+}
+.slider-list__item {
+  position: relative;
 }
 
-.box::before {
+.slider-list__item::before {
   content: '';
   position: absolute;
   display: block;
-  top: 30px;
-  left: 80px;
-  transform: translate(-50%, 0%);
+  top: 147px;
+  left: 53px;
 
   width: 54px;
   height: 40px;
 
-  background-image: url(../images/customer/quotes.png);
+  background-image: url(../images/customer/quotes.svg);
+  background-repeat: no-repeat;
+
+  @include tablet {
+    width: 60px;
+    height: 40px;
+
+    top: 125px;
+    left: -40px;
+  }
+
+  @include desktop {
+    top: 133px;
+    left: -27px;
+  }
 }
 
-.slider-list__item::after {
+.slider-list__contact::before {
   content: '';
   position: absolute;
-  bottom: 41px;
+  top: -20px;
 
   right: 50%;
   left: 50%;
@@ -94,6 +166,6 @@
   width: 32px;
   height: 4px;
 
-  background-image: url(../images/customer/dots.png);
+  background-image: url(../images/customer/dots.svg);
   background-repeat: no-repeat;
 }
