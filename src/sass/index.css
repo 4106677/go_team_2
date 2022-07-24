@@ -43,6 +43,7 @@ body {
 }
 
 .is-hidden {
+  transform: translateX(-100%);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -150,6 +151,7 @@ img {
   font-weight: 700;
   line-height: 1.31em;
   color: #fff;
+  transition: color 0.3s linear;
 }
 .header-menu__link:hover, .header-menu__link:focus {
   color: #d41443;
@@ -166,15 +168,23 @@ img {
 
 .mobile-menu__container {
   z-index: 1;
-  position: fixed;
+  position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
+  overflow: auto;
   padding-top: 60px;
   padding-left: 0;
   padding-right: 0;
   height: 100vh;
+  max-width: 320px;
   background-color: rgb(225, 121, 146);
-  transition: opacity 0.3s linear, visibility 0.3s linear;
+  transform: translateX(0);
+  transition: transform 2000ms;
+}
+
+.mobile-menu__container-translate {
+  transform: translateX(100%);
+  transition: transform 2000ms;
 }
 
 .mobile-menu__open-button {
@@ -255,7 +265,7 @@ img {
     align-items: center;
     margin-left: 32px;
     height: 50px;
-    min-width: 209px;
+    min-width: 160px;
     border: none;
     border-radius: 22px;
     font-weight: 700;
