@@ -50,12 +50,12 @@
 	max-width: 320px;
   background-color: $mobile-menu-background-color;
 	transform: translateX(0);
-  transition: transform 2000ms;
+  transition: transform 300ms;
 }
 
 .mobile-menu__container-translate{
 	transform: translateX(100%);
-	transition: transform 2000ms;
+	transition: transform 300ms;
 }
 
 
@@ -93,6 +93,7 @@
   border-radius: 22px;
   font-weight: 700;
   line-height: 1.31em;
+	transition: color $transition;
   &:hover,
   &:focus {
     background-color: rgba(236, 235, 235, 1);
@@ -121,6 +122,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.28em;
+	transition: color $transition;
 	&:hover,
 	&:focus{
 		color: $primary-accent-color;
