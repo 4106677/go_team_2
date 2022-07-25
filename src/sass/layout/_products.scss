@@ -230,6 +230,8 @@
   width: 40px;
   height: 40px;
   transition: color $transition, background-color $transition;
+  cursor: pointer;
+  padding: 0;
 
   @include desktop {
     margin-top: 60px;
