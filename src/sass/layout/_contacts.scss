@@ -256,17 +256,20 @@ margin-bottom: 8px;
     }
 }
 .button__box{
-    width: 162px;
-    height: 98px;
+    margin: 0 auto;
+    width: 280px;
+    // height: 98px;
 
     @include tablet {
     max-width: 768px;
+    width: 400px;
  display: flex;
  justify-content: center;
  gap:14.5px;
 }
 @include desktop {
     max-width: 1200px;
+    
     gap:12px;
 }
 }
@@ -275,7 +278,7 @@ margin-bottom: 8px;
     align-items: center;
     justify-content: center;
 
-    width: 162px;
+    width: 166px;
     height: 44px;
     padding: 10px 32px;
     margin: 0 auto;
@@ -290,14 +293,14 @@ margin-bottom: 8px;
 
 @include tablet {
         max-width: 768px;
-        width: 192px;
+        width: 200px;
         height: 44px;
         font-size: 16px;
         line-height: 1.3;
     }
     @include desktop {
         max-width: 1200px;
-        width: 198px;
+        width: 200px;
         height: 44px;
         font-size: 16px;
         line-height: 1.3;
