@@ -2,17 +2,12 @@
     display: block;
 }
 .footer__container {
-    padding-left: 20px;
-    padding-right: 20px;
     @include tablet {
         display: flex;
         justify-content: space-between;
-        padding-left: 16px;
     }
     @include desktop {
         justify-content: baseline;
-        padding-left: 16px;
-        padding-right: 16px;
     }
 }
 .footer__name {
