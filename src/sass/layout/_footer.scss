@@ -9,10 +9,10 @@
         justify-content: space-between;
         padding-left: 16px;
     }
-        @include desktop {
-            justify-content: baseline;
-            padding-left: 16px;
-            padding-right: 16px;
+    @include desktop {
+        justify-content: baseline;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
 .footer__name {
@@ -137,9 +137,7 @@
     line-height: 1.9;
     color: $primary-text-color;
     @include tablet {
-        font-weight: 700;
         font-size: 14px;
-        line-height: 1.9;
         letter-spacing: 0.02em;
     }
     @include desktop {
@@ -155,7 +153,6 @@
     @include tablet {
         font-weight: 500;
         font-size: 14px;
-        line-height: 1.9;
         letter-spacing: 0.02em;
     }
 }
@@ -170,15 +167,10 @@
         justify-content: center;
         padding-top: 8px;
         padding-bottom: 4px;
-        border-top: 1px solid #E1E1E1;
     }
     @include desktop {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         padding-top: 7px;
         padding-bottom: 4px;
-        border-top: 1px solid #E1E1E1;
     }
 }
 .footer__cooperation-text {
