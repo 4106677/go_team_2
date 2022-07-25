@@ -115,10 +115,10 @@
         background-color: $primary-accent-color;
     }
     
-        &:hover .footer__contacts--icon,
-        &:focus .footer__contacts--icon {
-            fill: #ffffff;
-        }
+    &:hover .footer__contacts--icon,
+    &:focus .footer__contacts--icon {
+        fill: #ffffff;
+    }
 }
 .footer__contacts-icon {
     fill: #FFF5F6;
