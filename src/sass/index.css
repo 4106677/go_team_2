@@ -129,6 +129,10 @@ img {
 }
 
 .header__container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 998;
   background-color: transparent;
   padding-top: 8px;
   display: flex;
