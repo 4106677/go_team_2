@@ -21,6 +21,8 @@
 }
 
 .slider-list {
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
   display: flex;
 
@@ -43,20 +45,25 @@
 
 .review-box {
   position: relative;
+
   margin: 0 auto;
-  padding: 43px 58px 26px 65px;
+  padding: 43px 50px 26px 50px;
+
+  width: 280px;
+  display: flex;
+  justify-content: center;
 
   background-color: #fafafa;
 
   @include tablet {
     width: 620px;
-    padding: 37px 53px 44px 51px;
+    padding: 37px 6px 36px 6px;
 
     background-color: rgba(250, 250, 250, 0.4);
   }
   @include desktop {
     width: 968px;
-    padding: 47px 109px 39px 109px;
+    padding: 47px 73px 31px 74px;
     background-color: #fafafa;
   }
 }
@@ -64,6 +71,7 @@
 .review-box__text {
   position: relative;
   display: flex;
+  flex-direction: column;
 
   font-weight: 500;
   font-size: 12px;
@@ -71,40 +79,106 @@
   text-align: center;
   /* or 31px */
 
-  background-image: url(../images/customer/lines.svg);
-  background-position: 0 60px;
-
   z-index: 2;
 
   @include tablet {
-    text-align: center;
-    background-image: repeating-linear-gradient(
-      180deg,
-      #e1e1e1,
-      #e1e1e1 30px,
-      #e1e1e1 31px
-    );
-    background-position: 0 100%;
-    background-size: 100% 1px;
-    background-repeat: repeat-x;
-
     font-size: 14px;
     line-height: 2.16;
   }
 
   @include desktop {
-    background-image: repeating-linear-gradient(
-      180deg,
-      #e1e1e1,
-      #e1e1e1 30px,
-      #e1e1e1 31px
-    );
-    background-position: 0 100%;
-    background-size: 10px 1px;
-    background-repeat: repeat-x;
-
     font-size: 16px;
     line-height: 1.86;
+  }
+
+  // @include tablet {
+  //   display: inline;
+  //   text-align: center;
+  //   margin: 0 auto;
+  //   background-image: repeating-linear-gradient(
+  //     180deg,
+  //     #e1e1e1,
+  //     #e1e1e1 30px,
+  //     #e1e1e1 31px
+  //   );
+  //   background-position: 0 100%;
+  //   background-size: 100% 1px;
+  //   background-repeat: repeat-x;
+  // }
+
+  // @include desktop {
+  //   background-image: repeating-linear-gradient(
+  //     180deg,
+  //     #e1e1e1,
+  //     #e1e1e1 30px,
+  //     #e1e1e1 31px
+  //   );
+  //   background-position: 0 100%;
+  //   background-size: 10px 1px;
+  //   background-repeat: repeat-x;
+  // }
+}
+.review-box__line {
+  display: block;
+
+  background-image: repeating-linear-gradient(
+    180deg,
+    #e1e1e1,
+    #e1e1e1 30px,
+    #e1e1e1 31px
+  );
+  background-position: 0 100%;
+  background-size: 10px 1px;
+  background-repeat: repeat-x;
+}
+
+.review-box__text--mobile {
+  width: 180px;
+  @include tablet {
+    display: none;
+  }
+}
+
+.review-box__text--tablet {
+  @include mobile_max {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
+
+  @include tablet {
+    display: block;
+    width: 608px;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.review-box__text--desktop {
+  @include mobile_max {
+    display: none;
+  }
+  @include mobile {
+    display: none;
+  }
+
+  @include tablet_max {
+    display: none;
+  }
+
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 821px;
   }
 }
 
@@ -133,6 +207,14 @@
 }
 .slider-list__item {
   position: relative;
+  height: 520px;
+
+  @include tablet {
+    height: 362px;
+  }
+  @include desktop {
+    height: 350px;
+  }
 }
 
 .slider-list__item::before {
@@ -155,18 +237,19 @@
     height: 40px;
 
     top: 125px;
-    left: 10px;
+    left: 33px;
   }
 
   @include desktop {
     top: 133px;
-    left: 82px;
+    left: 101px;
   }
 }
 
 .slider-list__contact::before {
   content: '';
   position: absolute;
+
   top: -20px;
 
   right: 50%;
@@ -177,5 +260,20 @@
   height: 4px;
 
   background-image: url(../images/customer/dots.svg);
+  background-repeat: no-repeat;
+}
+
+.slider-list__item::after {
+  content: '';
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+
+  width: 72px;
+  height: 12px;
+  bottom: 0px;
+
+  background-image: url(../images/customer/slider-dots.svg);
   background-repeat: no-repeat;
 }
