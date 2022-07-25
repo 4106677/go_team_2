@@ -1,0 +1,314 @@
+.hero {
+  background-color: #ffb8ca;
+}
+
+.hero .container {
+  overflow: hidden;
+  position: relative;
+  padding-top: 194px;
+  height: 502px;
+
+  @include tablet {
+    padding-top: 102px;
+    height: 416px;
+  }
+
+  @include desktop {
+    padding-top: 147px;
+    height: 664px;
+  }
+}
+
+.hero__wraper-btns {
+  display: flex;
+}
+.hero__title {
+  position: relative;
+  z-index: 2;
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  max-width: 218px;
+  margin-bottom: 20px;
+
+  @include tablet {
+    font-size: 22px;
+    line-height: 1.14;
+    max-width: 162px;
+  }
+  @include desktop {
+    max-width: 277px;
+    font-size: 38px;
+    line-height: 1.16;
+  }
+}
+
+.hero__title--red {
+  font-size: 48px;
+  line-height: 0.97;
+  color: $primary-accent-color;
+
+  @include tablet {
+    font-size: 34px;
+    line-height: 0.91;
+  }
+  @include desktop {
+    font-size: 58px;
+    line-height: 0.91;
+  }
+}
+
+.hero__button--red {
+  margin-right: 8px;
+}
+
+.hero__button {
+  position: relative;
+  z-index: 2;
+  margin-left: 0;
+  font-size: 8px;
+  line-height: 1.25;
+  min-height: 24px;
+  width: auto;
+  padding-left: 14px;
+  padding-right: 14px;
+
+  @include desktop {
+    min-height: 40px;
+    font-size: 14px;
+    line-height: 1.29;
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+}
+
+.hero__list {
+  display: none;
+  @include tablet {
+    position: absolute;
+    top: 94px;
+    right: 32px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 8px;
+  }
+
+  @include desktop {
+    top: 156px;
+    right: 16px;
+  }
+}
+
+.hero__item--number {
+  position: relative;
+  font-family: 'Titan One';
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  color: $primary-accent-color;
+  text-align: right;
+  z-index: 10;
+
+  @include desktop {
+    font-size: 46px;
+    line-height: 1.15;
+    margin-bottom: 2px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    right: -6px;
+    top: -2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: block;
+    z-index: -1;
+
+    @include desktop {
+      right: -8px;
+      top: -4px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.hero__item:first-child {
+  margin-bottom: 17px;
+}
+
+.hero__item--name {
+  font-size: 8px;
+  line-height: 1.25;
+  color: #ffffff;
+  text-align: right;
+
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+
+@keyframes show {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes show-bottom {
+  from {
+    transform: scale(0.5) translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+.main-image__icecream {
+  position: absolute;
+
+  bottom: 0;
+  right: 10%;
+  width: 171px;
+  height: 410px;
+  z-index: 1;
+  animation: show-bottom 1.5s ease-in-out;
+  @include tablet {
+    width: 143px;
+    height: 336px;
+    right: 303px;
+  }
+  @include desktop {
+    width: 236px;
+    height: 557px;
+    right: 328px;
+  }
+}
+
+.main-image::before {
+  content: '';
+  position: absolute;
+  top: 83px;
+  left: 36px;
+  width: 346px;
+  height: 344px;
+  border-radius: 50%;
+  background-color: #ffa5ba;
+
+  @include tablet {
+    width: 335px;
+    height: 333px;
+    top: 43px;
+    left: 248px;
+  }
+
+  @include desktop {
+    width: 534px;
+    height: 534px;
+    top: 55px;
+    left: 517px;
+  }
+}
+
+.bottom-images__milk {
+  animation: show 1.5s ease-in-out;
+  display: none;
+  @include tablet {
+    position: absolute;
+    left: 32px;
+    bottom: 16px;
+    display: block;
+    width: 152px;
+    height: 154px;
+  }
+
+  @include desktop {
+    bottom: 60px;
+    left: 16px;
+    width: 213px;
+    height: 216px;
+  }
+}
+
+.bottom-images__girl {
+  display: none;
+
+  @include tablet {
+    position: absolute;
+    right: 32px;
+    bottom: 1px;
+    display: block;
+    width: 190px;
+    height: 150px;
+    animation: show 1.5s ease-in-out;
+  }
+  @include desktop {
+    right: 16px;
+    width: 304;
+    height: 241px;
+  }
+}
+
+.hero-descr {
+  display: none;
+  @include tablet {
+    position: absolute;
+    display: block;
+    max-width: 114px;
+    left: 184px;
+    bottom: 56px;
+  }
+
+  @include desktop {
+    max-width: 200px;
+    left: 229px;
+    bottom: 84px;
+  }
+}
+
+.hero-descr__text {
+  font-size: 8px;
+  line-height: 1.5;
+  color: #ffffff;
+  margin-bottom: 7px;
+
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+}
+
+.hero-descr-btn {
+  background-color: #ffffff;
+  display: flex;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  padding: 6px;
+  margin-left: 0;
+  @include desktop {
+    width: 26px;
+    height: 26px;
+    padding: 10px;
+  }
+}
+
+.button__icon {
+  fill: $primary-accent-color;
+}
