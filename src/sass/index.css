@@ -130,10 +130,16 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .header__container {
     padding-top: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__container {
+    padding-top: 37px;
   }
 }
 
@@ -168,7 +174,7 @@ img {
 
 .mobile-menu__container {
   z-index: 1;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   overflow: auto;
