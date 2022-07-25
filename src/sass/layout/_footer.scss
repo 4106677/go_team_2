@@ -10,7 +10,6 @@
         padding-left: 16px;
     }
         @include desktop {
-            display: flex;
             justify-content: baseline;
             padding-left: 16px;
             padding-right: 16px;
@@ -21,10 +20,6 @@
     text-align: left;
     margin-top: 40px;
     margin-bottom: 40px;
-    @include tablet {
-        margin-bottom: 40px;
-        margin-top: 40px;
-    }
     @include desktop {
         margin-top: 121px;
         margin-bottom: 60px;
@@ -71,7 +66,6 @@
     }
 }
 .footer__contacts {
-    display: block;
     text-align: right;
     @include tablet {
         margin-top: 100px;
@@ -81,18 +75,17 @@
         margin-bottom: 60px;
     }
 }
-.footer__contacts--box {
+.footer__contacts-box {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 40px;
 }
-.footer__contacts--soc {
+.footer__contacts-soc {
     display: flex;
     margin-top: 0px;
     margin-bottom: 0px;
 }
-.footer__contacts--item {
-    display: flex;
+.footer__contacts-item {
     width: 32px;
     height: 32px;
     list-style: none;
@@ -105,7 +98,7 @@
         height: 34px;
     }
 }
-.footer__contacts--link {
+.footer__contacts-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -127,16 +120,16 @@
             fill: #ffffff;
         }
 }
-.footer__contacts--icon {
+.footer__contacts-icon {
     fill: #FFF5F6;
 }
-.footer__contacts--tel {
+.footer__contacts-tel {
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-end;
     margin-bottom: 40px;
 }
-.footer__contacts--text {
+.footer__contacts-text {
     margin-right: 4px;
     font-family: inherit;
     font-weight: 700;
@@ -153,7 +146,7 @@
         font-size: 16px;
     }
 }
-.footer__contacts--number {
+.footer__contacts-number {
     font-family: inherit;
     font-weight: 700;
     font-size: 12px;
@@ -167,7 +160,6 @@
     }
 }
 .footer__cooperation {
-    display: block;
     text-align: center;
     padding-top: 16px;
     padding-bottom: 3px;
@@ -189,7 +181,7 @@
         border-top: 1px solid #E1E1E1;
     }
 }
-.footer__cooperation--text {
+.footer__cooperation-text {
     font-family: inherit;
     font-weight: 700;
     font-size: 14px;
@@ -202,7 +194,7 @@
     }
 
 }
-.footer__cooperation--row {
+.footer__cooperation-row {
     font-family: inherit;
     font-weight: 700;
     font-size: 14px;
