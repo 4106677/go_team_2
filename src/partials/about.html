@@ -1,4 +1,4 @@
-<section class="about section">
+<section id="about" class="about section">
     <div class="container">
         <p class="about__subtitle title">tradition and love</p>
         <h2 class="about__title title">how it&#8217s made?</h2>
@@ -27,7 +27,7 @@
                     <br>
                     Aliquam erat volutpat. Aenean accumsan.
                 </p>
-                <button type="button" class="about__btn button button--white">Read more
+                <button type="button" class="about__btn button button--white" data-about-modal-open>Read more
                     <svg class="about__btn-icon" width="8" height="14">
                         <use href="./images/icons.svg#icon-about-btn"></use>
                     </svg></button>
@@ -35,7 +35,7 @@
         </div>
     </div>
 </section>
-<section class="advantages section">
+<section id="advantages" class="advantages section">
     <div class="container">
         <h2 class="visually-hidden">Advantages</h2>
         <ul class="advantages__list list">
@@ -60,3 +60,20 @@
         </ul>
     </div>
 </section>
+<div class="about-backdrop is-hidden" data-about-modal>
+    <div class="about-modal">
+        <button type="button" class="about-modal__close-btn" data-about-modal-close>
+            <svg class="about-modal__close-icon" width="20" height="20">
+                <use href="./images/icons.svg#about_icon-modal-close"></use>
+            </svg>
+        </button>
+        <p class="about-modal__title about__subtitle">Lorem ipsum dolor</p>
+        <div class="about-modal__text"><b>Lorem ipsum dolor sit amet.</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nesciunt aut adipisci, sit dignissimos perspiciatis laborum sequi repellat at voluptate eligendi mollitia ullam libero obcaecati, ratione laboriosam alias expedita eveniet aliquam veniam architecto in nemo rem excepturi. Nobis, dolores praesentium.</div>
+        <div class="about-modal__text"><b>Lorem ipsum dolor sit.</b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe culpa itaque enim labore, natus soluta totam vel? Error architecto porro dicta est corporis! Obcaecati unde delectus reiciendis ipsam, beatae id, dolorem illo porro fugiat sit consequatur? Iure delectus officiis perferendis.</div>
+        <div class="about-modal__text"><b>Lorem ipsum dolor sit amet consectetur.</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, vitae. Impedit, ad quod, atque at pariatur repellat saepe harum delectus eum temporibus, praesentium neque hic ea nam possimus natus nisi sint tenetur esse. A numquam ducimus expedita, tenetur sint in!</div>
+        <!-- <button type="button" class="about__btn button button--white" data-about-modal-open>Read more
+            <svg class="about__btn-icon" width="8" height="14">
+                <use href="./images/icons.svg#icon-about-btn"></use>
+            </svg></button> -->
+    </div>
+</div>
