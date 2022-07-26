@@ -1,49 +1,38 @@
 .contacts {
   margin-top: 0px;
-  //   margin-bottom: 40px;
-  //   margin-left: 20px;
-  //   margin-right: 20px;
+  padding-top: 0px;
 
   box-shadow: 0px 310px 0px 0px rgba(255, 255, 255, 1) inset;
 
   @include tablet {
     box-shadow: 0px 317px 0px 0px rgba(255, 255, 255, 1) inset;
+    padding-top: 20px;
   }
 
   @include desktop {
     box-shadow: 0px 150px 0px 0px rgba(255, 255, 255, 1) inset;
+    padding-top: 60px;
   }
 }
 .contacts__list {
   flex-direction: column;
-  width: 280px;
+  display: flex;
+  gap: 20px;
+
+  align-items: center;
+
   margin-top: 0px;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
 
-  //   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-  //   border-radius: 24px;
-
   @include tablet {
-    max-width: 768px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 224px 224px 224px;
-    grid-gap: 32px;
+    gap: 32px;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 
     margin-bottom: 60px;
-  }
-  @include desktop {
-    max-width: 1200px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 368px 368px 368px;
-    grid-gap: 32px;
-    align-items: center;
-    justify-content: center;
   }
 }
 
@@ -51,202 +40,140 @@
   background-color: #ffffff;
   padding: 40px 32px;
   border-radius: 24px;
-  margin-bottom: 20px;
+  width: 280px;
+  font-size: 12px;
 
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 
-  &:nth-child(3n) {
-    margin-bottom: 0;
-  }
   @include tablet {
-    max-width: 768px;
+    width: 100%;
+    font-size: 14px;
+
     margin: 0;
-    margin-top: 20px;
+
     padding: 40px 32px;
   }
 
   @include desktop {
-    margin-top: 60px;
+    font-size: 16px;
+    // margin-top: 60px;
     padding: 40px;
   }
 }
 
 .contacts__representatives {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 80px;
-  height: 16px;
+  &-brown {
+    background-color: #c2e297;
+  }
+  display: inline-block;
+
+  padding: 0px 24px;
+
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   width: 80px;
+  //   height: 16px;
+
   background-color: #f0d1a5;
   border-radius: 4px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.55;
+
   color: #ffffff;
   margin-bottom: 20px;
 
   @include tablet {
+    padding: 0px 17px;
+
     border-radius: 6px;
-    max-width: 768px;
-    width: 75px;
-    height: 28px;
+
     font-size: 16px;
-    line-height: 1.6;
-  }
-  @include desktop {
-    max-width: 1200px;
-    width: 75px;
-    height: 28px;
-    font-size: 16px;
-    line-height: 1.6;
   }
 }
 
-.contacts__representativ {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 130px;
-  height: 16px;
-  background: #c2e297;
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: 12px;
-  color: #ffffff;
-  line-height: 1.55;
-  margin-bottom: 20px;
-
-  @include tablet {
-    border-radius: 6px;
-    max-width: 768px;
-    width: 135px;
-    height: 28px;
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  @include desktop {
-    max-width: 1200px;
-    width: 138px;
-    height: 28px;
-    font-size: 16px;
-    line-height: 1.6;
-  }
-}
 .contacts__title {
-  font-weight: 500;
-  font-size: 12px;
   line-height: 1.86;
   letter-spacing: 0.04em;
   color: #000000;
   margin-bottom: 20px;
+  font-size: inherit;
+  font-weight: inherit;
 
   @include tablet {
-    max-width: 768px;
-    font-size: 14px;
-    line-height: 1.6;
-  }
-  @include desktop {
-    max-width: 1200px;
-    font-size: 16px;
     line-height: 1.6;
   }
 }
 .contacts__text {
-  font-weight: 500;
-  font-size: 12px;
   line-height: 1.5;
   color: #907e82;
   max-width: 179px;
   margin-bottom: 24px;
 
   @include tablet {
-    max-width: 768px;
-    font-size: 14px;
     line-height: 1.85;
     width: 159px;
   }
   @include desktop {
-    max-width: 1200px;
-    font-size: 16px;
     line-height: 1.92;
     width: 243px;
     letter-spacing: 0.04em;
   }
 }
 .contacts__box {
+  font-weight: 500;
+  font-style: 12px;
+
   border-top: 1px solid rgba(225, 225, 225, 1);
   border-bottom: 1px solid rgba(225, 225, 225, 1);
   width: 100%;
   height: 145px;
 
-  padding: 24px 0;
+  padding-top: 24px;
 
   @include tablet {
-    max-width: 768px;
     height: 173px;
     padding: 32px 0;
+
+    font-style: 14px;
   }
   @include desktop {
-    max-width: 1200px;
-    padding: 32px 0;
     height: 196px;
+
+    font-style: 16px;
   }
 }
+
 .contacts__working {
-  font-weight: 500;
-  font-size: 12px;
   line-height: 1.86;
   color: #000000;
 
-  @include tablet {
-    max-width: 768px;
-    font-size: 14px;
-  }
   @include desktop {
-    max-width: 1200px;
-    font-size: 16px;
-
     letter-spacing: 0.04em;
   }
 }
 .contacts__time {
-  font-weight: 500;
-  font-size: 12px;
   line-height: 1.86;
   color: #ffa5ba;
-
-  @include tablet {
-    max-width: 768px;
-    font-size: 14px;
-  }
-  @include desktop {
-    max-width: 1200px;
-    font-size: 16px;
-  }
 }
+
 .indent {
   margin-bottom: 8px;
+
   @include tablet {
-    max-width: 768px;
-    margin-bottom: 12px;
-  }
-  @include desktop {
-    max-width: 1200px;
     margin-bottom: 12px;
   }
 }
 
 .contacts__call {
   display: block;
-  font-weight: 500;
-  font-size: 12px;
+
   line-height: 1.5;
   color: #907e82;
   margin-top: 24px;
 
   @include tablet {
-    max-width: 768px;
-    font-size: 14px;
     line-height: 1.83;
   }
   @include desktop {
@@ -254,49 +181,42 @@
     &:focus {
       color: #d41443;
     }
-    max-width: 1200px;
-    font-size: 16px;
   }
 }
+
 .contacts__write {
   display: block;
-  font-weight: 500;
-  font-size: 12px;
+
   line-height: 1.5;
   color: #907e82;
 
   @include tablet {
-    max-width: 768px;
-    font-size: 14px;
     line-height: 1.83;
   }
+
   @include desktop {
     &:hover,
     &:focus {
       color: #d41443;
     }
-    max-width: 1200px;
-    font-size: 16px;
   }
 }
 .button__box {
   margin: 0 auto;
   width: 280px;
-  // height: 98px;
 
   @include tablet {
-    max-width: 768px;
     width: 400px;
     display: flex;
     justify-content: center;
     gap: 14.5px;
   }
-  @include desktop {
-    max-width: 1200px;
 
+  @include desktop {
     gap: 12px;
   }
 }
+
 .buttons {
   display: flex;
   align-items: center;
@@ -316,38 +236,17 @@
   cursor: pointer;
 
   @include tablet {
-    max-width: 768px;
     width: 200px;
-    height: 44px;
     font-size: 16px;
-    line-height: 1.3;
-  }
-  @include desktop {
-    max-width: 1200px;
-    width: 200px;
-    height: 44px;
-    font-size: 16px;
-    line-height: 1.3;
   }
 }
 .button--red {
-  color: #fff;
-  background-color: $primary-accent-color;
   margin-top: 32px;
   margin-bottom: 10px;
+
   @include tablet {
     margin-top: 0;
     margin-bottom: 0;
-  }
-}
-
-.button--white {
-  color: $primary-accent-color;
-  background-color: #fff;
-  transition: background-color $transition;
-  &:hover,
-  &:focus {
-    background-color: #ecebeb;
   }
 }
 
@@ -356,7 +255,6 @@
   fill: #ffffff;
 
   @include tablet {
-    max-width: 768px;
     margin-left: 13px;
   }
 }
@@ -364,7 +262,6 @@
   fill: rgba(212, 20, 67, 1);
   margin-left: 3px;
   @include tablet {
-    max-width: 768px;
     margin-left: 8px;
   }
 }
