@@ -1,0 +1,105 @@
+.gallery {
+  width: 100%;
+  background-image: linear-gradient(to top, #fff 70%, #fff5f6);
+}
+
+//  @media screen and (min-width: 480px) {
+//    width: 480px;
+//    margin-left: auto;
+//    margin-right: auto;
+//  }
+//  @media screen and (min-width: 768px) {
+//    margin-left: auto;
+//    margin-right: auto;
+//    width: 768px;
+//  }
+//  @media screen and (min-width: 1200px) {
+//    width: 1200px;
+//    padding-left: 94px;
+//    padding-right: 94px;
+//  }
+// }
+
+.gallery__list {
+ grid-template-columns: repeat(7, [col] 1fr);
+ grid-template-rows: repeat(6, [row] 1fr);
+ gap: 2.53px;
+//  grid-auto-rows: minmax(43px, auto);
+ display: grid;
+ @media screen and (min-width: 768px) {
+   gap: 6px;
+ }
+ @media screen and (min-width: 1200px) {
+   gap: 8px;
+   max-width: 1200px;
+   padding-left: 94px;
+   padding-right: 94px;
+   margin-left: auto;
+   margin-right: auto;
+ }
+}
+
+.gallery__image {
+ width: 100%;
+ border-radius: 8px;
+
+ @media screen and (min-width: 768px) {
+   border-radius: 20px;
+  }
+}
+
+.gallery__item {
+  transform: scale(1);
+  z-index: 50;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1000ms;
+  &:hover {
+    z-index: 100;
+    transform: scale(1.15);
+  }
+}
+
+.gallery__item1 {
+ grid-column: col 1 / col 2;
+ grid-row: row 3 / row 5;
+}
+.gallery__item2 {
+ grid-column: col 2 / col 3;
+ grid-row: row 2 / row 4;
+}
+
+.gallery__item3 {
+ grid-column: col 2 / col 3;
+ grid-row: row 4 / row 6;
+}
+.gallery__item4 {
+ grid-column: col 3 / col 5;
+ grid-row: row 1 / row 5;
+
+}
+.gallery__item5 {
+ grid-column: col 3 / col 4;
+ grid-row: row 5 / row 7;
+}
+.gallery__item6 {
+ grid-column: col 5 / col 6;
+ grid-row: row 2 / row 4;
+}
+.gallery__item7 {
+ grid-column: col 5 / col 6;
+ grid-row: row 4 / row 6;
+}
+.gallery__item8 {
+ grid-column: col 6 / col 7;
+ grid-row: row 2 / row 4;
+ transform: translateY(-20%);
+}
+.gallery__item9 {
+ grid-column: col 6 / col 7;
+ grid-row: row 4 / row 6;
+ transform: translateY(-20%);
+}
+.gallery__item10 {
+ grid-column: col 7 / col 8;
+ grid-row: row 3 / row 5;
+
+}
