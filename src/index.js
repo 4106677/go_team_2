@@ -1,19 +1,21 @@
 // Modal
 (() => {
- const refs = {
-   openModalBtn: document.querySelector('[data-about-modal-open]'),
-   closeModalBtn: document.querySelector('[data-about-modal-close]'),
-     modal: document.querySelector('[data-about-modal]'),
-   body: document.querySelector('body'),
- };
+  const refs = {
+    openModalBtn: document.querySelector('[data-about-modal-open]'),
+    closeModalBtn: document.querySelector('[data-about-modal-close]'),
+    goBackBtn: document.querySelector('[data-about-modal-go-back]'),
+    modal: document.querySelector('[data-about-modal]'),
+    body: document.querySelector('body'),
+  };
 
- refs.openModalBtn.addEventListener('click', toggleModal);
- refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.goBackBtn.addEventListener('click', toggleModal);
 
- function toggleModal() {
-     refs.modal.classList.toggle('is-hidden');
-     refs.body.classList.toggle('no-scroll');
- }
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+    refs.body.classList.toggle('no-scroll');
+  }
 })();
 
 // Mobile_menu
@@ -23,10 +25,20 @@
     closeMenuBtn: document.querySelector('[data-menu-close]'),
     menu: document.querySelector('[data-menu]'),
     body: document.querySelector('body'),
+    home: document.querySelector('[data-home]'),
+    homeAbout: document.querySelector('[data-home-about]'),
+    about: document.querySelector('[data-about]'),
+    products: document.querySelector('[data-products]'),
+    contacts: document.querySelector('[data-contacts]'),
   };
 
   refs.openMenuBtn.addEventListener('click', toggleMenu);
   refs.closeMenuBtn.addEventListener('click', toggleMenu);
+  refs.home.addEventListener('click', toggleMenu);
+  refs.homeAbout.addEventListener('click', toggleMenu);
+  refs.about.addEventListener('click', toggleMenu);
+  refs.products.addEventListener('click', toggleMenu);
+  refs.contacts.addEventListener('click', toggleMenu);
 
   function toggleMenu() {
     refs.menu.classList.toggle('mobile-menu__container-translate');
