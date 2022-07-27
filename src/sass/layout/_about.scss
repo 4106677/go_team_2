@@ -1,383 +1,373 @@
 .about {
-    @include desktop {
-        background-image: url(../images/about/about_bg-img-desc-1x.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 0 236px;
+  @include desktop {
+    background-image: url(../images/about/about_bg-img-desc-1x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 236px;
 
-        @include retina {
-            background-image: url(../images/about/about_bg-img-desc-2x.png);
-        }
+    @include retina {
+      background-image: url(../images/about/about_bg-img-desc-2x.png);
     }
+  }
 }
 
 .about.section {
-    @include mobile_max{
+  @include mobile_max {
     padding-bottom: 40px;
-    }
+  }
 }
 
 .about__subtitle {
-    font-size: 18px;
-    line-height: 1.17;
-    color: #ffa5ba;
-    letter-spacing: normal;
-    margin-top: 0;
-    margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.17;
+  color: #ffa5ba;
+  letter-spacing: normal;
+  margin-top: 0;
+  margin-bottom: 15px;
 
-    @include tablet {
-        margin-bottom: 16px;
-        font-size: 26px;
-        line-height: 1.15;
-    }
+  @include tablet {
+    margin-bottom: 16px;
+    font-size: 26px;
+    line-height: 1.15;
+  }
 
-    @include desktop {
-        font-size: 30px;
-        line-height: 1.13;
-    }
+  @include desktop {
+    font-size: 30px;
+    line-height: 1.13;
+  }
 }
 
 .about__title {
-    font-weight: 400;
-    margin-top: 0;
-    margin-bottom: 32px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 32px;
 
-    @include tablet {
-        margin-bottom: 40px;
-        font-size: 48px;
-    }
+  @include tablet {
+    margin-bottom: 40px;
+    font-size: 48px;
+  }
 
-    @include desktop {
-        margin-bottom: 60px;
-        font-size: 58px;
-        letter-spacing: 0.06em;
-        line-height: 1.14;
-    }
+  @include desktop {
+    margin-bottom: 60px;
+    font-size: 58px;
+    letter-spacing: 0.06em;
+    line-height: 1.14;
+  }
 }
 
 .about__wrap {
-    @include tablet {
-        display: flex;
-        padding-left: 12px;
-        padding-right: 14px;
-    }
+  @include tablet {
+    display: flex;
+    padding-left: 12px;
+    padding-right: 14px;
+  }
 }
 
 .about__image {
-    width: 100%;
-    margin-bottom: 40px;
+  width: 100%;
+  margin-bottom: 40px;
 
-    @include tablet {
-        margin-right: 32px;
-        margin-bottom: 0;
-        max-width: 336px;
-        max-height: 335px;
+  @include tablet {
+    margin-right: 32px;
+    margin-bottom: 0;
+    max-width: 336px;
+    max-height: 335px;
 
-        @include desktop {
-            margin-right: 99px;
-            max-width: 501px;
-            max-height: 501px;
-        }
+    @include desktop {
+      margin-right: 99px;
+      max-width: 501px;
+      max-height: 501px;
     }
+  }
 }
 
 .about__wrap-desc {
-    @include tablet_max {
-        background-image: url(../images/about/about_bg-img-mob-1x.png);
-        background-position: 0 71px;
-        background-repeat: no-repeat;
-        background-size: contain;
+  @include tablet_max {
+    background-image: url(../images/about/about_bg-img-mob-1x.png);
+    background-position: 0 71px;
+    background-repeat: no-repeat;
+    background-size: contain;
 
-        @include retina {
-            background-image: url(../images/about/about_bg-img-mob-2x.png);
-        }
+    @include retina {
+      background-image: url(../images/about/about_bg-img-mob-2x.png);
     }
+  }
 
-    @include desktop {
-        padding-top: 90px;
-    }
+  @include desktop {
+    padding-top: 90px;
+  }
 }
 
 .about__text {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.62;
-    color: $primary-text-color;
-    max-width: 220px;
-    @media screen and (min-width: 400px){
-        max-width: 300px;
-        font-size: 16px;
-    }
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: $primary-text-color;
+  max-width: 220px;
+  @media screen and (min-width: 400px) {
+    max-width: 300px;
+    font-size: 16px;
+  }
 
-    @include tablet {
-        max-width: 334px;
-        font-size: 14px;
-        line-height: 1.76;
-        letter-spacing: 0.04em;
-    }
+  @include tablet {
+    max-width: 334px;
+    font-size: 14px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+  }
 
-    @include desktop {
-        max-width: 463px;
-        font-size: 16px;
-    }
+  @include desktop {
+    max-width: 463px;
+    font-size: 16px;
+  }
 }
 
 .about__desc {
-    color: $secondary-text-color;
-    margin-top: 21px;
-    margin-bottom: 20px;
+  color: $secondary-text-color;
+  margin-top: 21px;
+  margin-bottom: 20px;
 
-    @include tablet {
-        margin-bottom: 40px;
-        margin-top: 15px;
-    }
+  @include tablet {
+    margin-bottom: 40px;
+    margin-top: 15px;
+  }
 
-    @include desktop {
-        margin-top: 32px;
-        font-size: 14px;
-        line-height: 1.94;
-    }
+  @include desktop {
+    margin-top: 32px;
+    font-size: 14px;
+    line-height: 1.94;
+  }
 }
 
 .about__btn {
-    display: flex;
-    width: 176px;
-    height: 46px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.29;
-    align-items: center;
-    justify-content: center;
-    border-radius: 22px;
-    margin: 0 0;
+  display: flex;
+  width: 176px;
+  height: 46px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22px;
+  margin: 0 0;
 
-    @include tablet {
-        font-size: 16px;
-    }
+  @include tablet {
+    font-size: 16px;
+  }
 
-    @include desktop {
-        line-height: 1.31;
-    }
+  @include desktop {
+    line-height: 1.31;
+  }
 }
 
 .about__btn-icon {
-    margin-left: 14px;
+  margin-left: 14px;
 }
 
 .advantages.section {
-    padding-top: 0;
+  padding-top: 0;
 }
 
-// .advantages {
-//     @include tablet {
-//         padding-left: 12px;
-//         padding-right: 189px;
-//     }
-
-//     @include desktop {
-//         padding-left: -4px;
-//         padding-right: 96px;
-//     }
-// }
-
 .advantages__list {
-    flex-direction: column;
-    gap: 32px;
+  flex-direction: column;
+  gap: 32px;
 
-    @include tablet {
-        flex-direction: row;
-        justify-content: flex-start;
-        // max-width: 527px;
-        gap: 0;
-    }
+  @include tablet {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 0;
+  }
 }
 
 .advantages__item {
-    width: 100%;
+  width: 100%;
 
+  &::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/about/advantages_img-2-1x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include retina {
+      background-image: url(../images/about/advantages_img-2-2x.png);
+    }
+  }
+
+  &:first-child {
     &::before {
-        content: '';
-        display: block;
-        width: 50px;
-        height: 50px;
-        background-image: url(../images/about/advantages_img-2-1x.png);
-        background-repeat: no-repeat;
-        background-size: contain;
+      content: '';
+      display: block;
+      width: 33px;
+      height: 50px;
+      background-image: url(../images/about/advantages_img-1-1x.png);
+      background-repeat: no-repeat;
+      background-size: contain;
 
-        @include retina {
-            background-image: url(../images/about/advantages_img-2-2x.png);
-        }
+      @include retina {
+        background-image: url(../images/about/advantages_img-1-2x.png);
+      }
     }
+  }
 
-    &:first-child {
-        &::before {
-            content: '';
-            display: block;
-            width: 33px;
-            height: 50px;
-            background-image: url(../images/about/advantages_img-1-1x.png);
-            background-repeat: no-repeat;
-            background-size: contain;
+  &:last-child {
+    &::before {
+      content: '';
+      display: block;
+      width: 44px;
+      height: 50px;
+      background-image: url(../images/about/advantages_img-3-1x.png);
+      background-repeat: no-repeat;
+      background-size: contain;
 
-            @include retina {
-                background-image: url(../images/about/advantages_img-1-2x.png);
-            }
-        }
+      @include retina {
+        background-image: url(../images/about/advantages_img-3-2x.png);
+      }
     }
-
-    &:last-child {
-        &::before {
-            content: '';
-            display: block;
-            width: 44px;
-            height: 50px;
-            background-image: url(../images/about/advantages_img-3-1x.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-
-            @include retina {
-                background-image: url(../images/about/advantages_img-3-2x.png);
-            }
-        }
-    }
+  }
 }
 
 .advantages__amount-wrap {
-    width: 98px;
-    height: 56px;
-    margin-bottom: 4px;
-    margin-top: 16px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+  width: 98px;
+  height: 56px;
+  margin-bottom: 4px;
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 
-    @include tablet {
-        margin-top: 36px;
-        margin-bottom: 13px;
-    }
+  @include tablet {
+    margin-top: 36px;
+    margin-bottom: 13px;
+  }
 
-    @include desktop {
-        margin-top: 40px;
-        margin-bottom: 16px;
-    }
+  @include desktop {
+    margin-top: 40px;
+    margin-bottom: 16px;
+  }
 }
 
 .advantages__amount {
-    font-size: 36px;
+  font-size: 36px;
+  line-height: 1.14;
+  margin-top: 0;
+  @media screen and (min-width: 400px) {
+    font-size: 48px;
+  }
+
+  @include tablet {
+    // font-size: 48px;
+    line-height: 1.15;
+  }
+
+  @include desktop {
+    font-size: 58px;
     line-height: 1.14;
-    margin-top: 0;
-    @media screen and (min-width: 400px) {
-            font-size: 48px;
-        }
-
-    @include tablet {
-        // font-size: 48px;
-        line-height: 1.15;
-    }
-
-    @include desktop {
-        font-size: 58px;
-        line-height: 1.14;
-    }
+  }
 }
 
 .advantages__text {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.7;
-    max-width: 230px;
-    @media screen and (min-width: 400px){
-        font-size: 14px;
-    }
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  max-width: 230px;
+  @media screen and (min-width: 400px) {
+    font-size: 14px;
+  }
 
-    @include tablet {
-        // font-size: 14px;
-        line-height: 1.74;
-        max-width: 180px;
-    }
+  @include tablet {
+    line-height: 1.74;
+    max-width: 180px;
+  }
 
-    @include desktop {
-        font-size: 16px;
-        line-height: 1.76;
-        letter-spacing: 0.02em;
-        max-width: 317px;
-    }
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.02em;
+    max-width: 317px;
+  }
 }
 
 .about-backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 888;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.15);
-    transition: opacity 300ms linear, visibility 300ms linear;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 888;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.15);
+  opacity: 1;
+  transition: opacity 300ms linear, visibility 300ms linear;
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 
 .about-modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-
-    width: 100%;
-    z-index: 999;
-    padding: 20px;
-    min-height: 500px;
-    background-color: #FFFFFF;
-    border-radius: 24px;
-    transition: transform 300ms linear;
-    .about-backdrop.is-hiden & {
-        transform: translate(-50%, -50%) scale(0);
-    }
-    @include tablet {
-        max-width: 700px;
-    }
-
-    @include desktop {
-        max-width: 800px;
-        max-height: 600px;
-    }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 100%;
+  z-index: 999;
+  padding: 20px;
+  min-height: 500px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  transition: transform 300ms linear;
+  .about-backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  @include tablet {
+    max-width: 700px;
+  }
+  @include desktop {
+    max-width: 800px;
+    max-height: 600px;
+  }
 }
 
 .about-modal__close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 30px;
-    height: 30px;
-    background-color: inherit;
-    border-radius: 50%;
-    border-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: background-color 300ms linear;
-    &:hover,
-    &:focus {
-        background-color: #fff5f6;
-    }
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: inherit;
+  border-radius: 50%;
+  border-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 300ms linear;
+  &:hover,
+  &:focus {
+    background-color: #fff5f6;
+  }
 }
 
 .about-modal__close-icon {
-    fill: $primary-accent-color;
+  fill: $primary-accent-color;
 }
 
 .about-modal__title {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .about-modal__text {
-    margin-bottom: 20px;
-    font-size: 12px;
-    @media screen and (min-width: 400px) {
-            font-size: 14px;
-        }
-    @include tablet {
-        font-size: 16px;
-}
+  margin-bottom: 20px;
+  font-size: 12px;
+  @media screen and (min-width: 400px) {
+    font-size: 14px;
+  }
+  @include tablet {
+    font-size: 16px;
+  }
 }
