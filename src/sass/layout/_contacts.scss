@@ -1,0 +1,267 @@
+.contacts {
+  margin-top: 0px;
+  padding-top: 0px;
+
+  box-shadow: 0px 310px 0px 0px rgba(255, 255, 255, 1) inset;
+
+  @include tablet {
+    box-shadow: 0px 317px 0px 0px rgba(255, 255, 255, 1) inset;
+    padding-top: 20px;
+  }
+
+  @include desktop {
+    box-shadow: 0px 150px 0px 0px rgba(255, 255, 255, 1) inset;
+    padding-top: 60px;
+  }
+}
+.contacts__list {
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
+
+  align-items: center;
+
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include tablet {
+    gap: 32px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 60px;
+  }
+}
+
+.contacts__item {
+  background-color: #ffffff;
+  padding: 40px 32px;
+  border-radius: 24px;
+  width: 280px;
+  font-size: 12px;
+
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+
+  @include tablet {
+    width: 100%;
+    font-size: 14px;
+
+    margin: 0;
+
+    padding: 40px 32px;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    // margin-top: 60px;
+    padding: 40px;
+  }
+}
+
+.contacts__representatives {
+  &-brown {
+    background-color: #c2e297;
+  }
+  display: inline-block;
+
+  padding: 0px 24px;
+
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   width: 80px;
+  //   height: 16px;
+
+  background-color: #f0d1a5;
+  border-radius: 4px;
+
+  color: #ffffff;
+  margin-bottom: 20px;
+
+  @include tablet {
+    padding: 0px 17px;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+  }
+}
+
+.contacts__title {
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: #000000;
+  margin-bottom: 20px;
+  font-size: inherit;
+  font-weight: inherit;
+
+  @include tablet {
+    line-height: 1.6;
+  }
+}
+.contacts__text {
+  line-height: 1.5;
+  color: #907e82;
+  max-width: 179px;
+  margin-bottom: 24px;
+
+  @include tablet {
+    line-height: 1.85;
+    width: 159px;
+  }
+  @include desktop {
+    line-height: 1.92;
+    width: 243px;
+    letter-spacing: 0.04em;
+  }
+}
+.contacts__box {
+  font-weight: 500;
+  font-style: 12px;
+
+  border-top: 1px solid rgba(225, 225, 225, 1);
+  border-bottom: 1px solid rgba(225, 225, 225, 1);
+  width: 100%;
+  height: 145px;
+
+  padding-top: 24px;
+
+  @include tablet {
+    height: 173px;
+    padding: 32px 0;
+
+    font-style: 14px;
+  }
+  @include desktop {
+    height: 196px;
+
+    font-style: 16px;
+  }
+}
+
+.contacts__working {
+  line-height: 1.86;
+  color: #000000;
+
+  @include desktop {
+    letter-spacing: 0.04em;
+  }
+}
+.contacts__time {
+  line-height: 1.86;
+  color: #ffa5ba;
+}
+
+.indent {
+  margin-bottom: 8px;
+
+  @include tablet {
+    margin-bottom: 12px;
+  }
+}
+
+.contacts__call {
+  display: block;
+
+  line-height: 1.5;
+  color: #907e82;
+  margin-top: 24px;
+
+  @include tablet {
+    line-height: 1.83;
+  }
+  @include desktop {
+    &:hover,
+    &:focus {
+      color: #d41443;
+    }
+  }
+}
+
+.contacts__write {
+  display: block;
+
+  line-height: 1.5;
+  color: #907e82;
+
+  @include tablet {
+    line-height: 1.83;
+  }
+
+  @include desktop {
+    &:hover,
+    &:focus {
+      color: #d41443;
+    }
+  }
+}
+.button__box {
+  margin: 0 auto;
+  width: 280px;
+
+  @include tablet {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    gap: 14.5px;
+  }
+
+  @include desktop {
+    gap: 12px;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 166px;
+  height: 44px;
+  padding: 10px 32px;
+  margin: 0 auto;
+  border: transparent;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.3;
+  border-radius: 22px;
+  cursor: pointer;
+
+  @include tablet {
+    width: 200px;
+    font-size: 16px;
+  }
+}
+.button--red {
+  margin-top: 32px;
+  margin-bottom: 10px;
+
+  @include tablet {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.button__icon-white {
+  margin-left: 3px;
+  fill: #ffffff;
+
+  @include tablet {
+    margin-left: 13px;
+  }
+}
+.button__icon-red {
+  fill: rgba(212, 20, 67, 1);
+  margin-left: 3px;
+  @include tablet {
+    margin-left: 8px;
+  }
+}

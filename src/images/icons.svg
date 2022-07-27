@@ -35,5 +35,11 @@
 <symbol id="icon-arrow" viewBox="0 0 32 32">
 <path d="M18.133 10.24l5.76 5.76-5.76 5.76-1.493-1.493 3.2-3.2h-11.307v-2.133h11.307l-3.2-3.2 1.493-1.493z"> </path>
 </symbol>
+<symbol id="icon-Vector-red" viewBox="0 0 22 32">
+<path d="M4.544 3.2l13.702 12.8-13.702 12.8"></path>
+</symbol>
+<symbol id="icon-Vector-white" viewBox="0 0 19 32">
+<path  d="M3.2 3.2l11.552 12.8-11.552 12.8"></path>
+</symbol>
 </defs>
 </svg>
