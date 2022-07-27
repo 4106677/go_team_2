@@ -33,3 +33,18 @@
     refs.body.classList.toggle('no-scroll');
   }
 })();
+
+$(document).ready(function () {
+  $('.slider-list').slick({
+    arrows: false,
+    dots: true,
+    adaptiveHeight: true,
+    initialSlide: 0,
+    infinite: true,
+    // autoplay: true,
+    // autoplaySpeed: 5500,
+    // pauseOnFocus: true,
+    // pauseOnHover: true,
+    // pauseOnDotsHover: true,
+  });
+});
