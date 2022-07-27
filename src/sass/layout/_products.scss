@@ -1,11 +1,11 @@
 .product__section {
   background-color: #fff;
 }
+
 .product__label {
   font-family: 'Titan One', cursive;
   font-size: 18px;
   line-height: 1.16;
-
   text-align: center;
   text-transform: uppercase;
   color: #ffa5ba;
@@ -21,24 +21,27 @@
     line-height: 1.33;
   }
 }
+
 .product__title {
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: 148px;
   letter-spacing: 0.04em;
   @include tablet {
     font-size: 48px;
     line-height: 1.14;
-    margin-bottom: 20px;
+    margin-bottom: 158px;
   }
   @include desktop {
     font-size: 58px;
     line-height: 1.14;
-
     letter-spacing: 0.06em;
+    margin-bottom: 281px;
   }
 }
+
 .product__list {
   flex-direction: column;
+  gap: 140px;
   @include tablet {
     gap: 16px;
     flex-direction: row;
@@ -52,12 +55,8 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 140px;
-  width: 100%;
-  height: 489px;
   border-radius: 24px;
   padding: 160px 40px 40px;
-
   &--pink {
     background-color: #ffb8ca;
   }
@@ -67,23 +66,16 @@
   &--green {
     background-color: #c2e297;
   }
-
   @include mobile {
-    width: 280px;
-    // padding: 160px 40px 40px;
+    width: 100%;
   }
   @include tablet {
-    width: 224px;
-    height: 473px;
-    width: calc(100% - 32px) / 3;
+    flex-basis: calc((100% - 32px) / 3);
     padding: 118px 32px 40px;
   }
   @include desktop {
-    width: 368px;
-    height: 535px;
+    flex-basis: calc((100% - 64px) / 3);
     padding: 165px 60px 60px;
-    width: calc(100% - 64px) / 3;
-    margin-top: 260px;
   }
 }
 
@@ -91,30 +83,24 @@
   font-family: 'Titan One', cursive;
   font-size: 20px;
   line-height: 1.15;
-
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffffff;
 }
+
 .product__subtitle::before {
   content: '';
-
   width: 280px;
   height: 280px;
   background-size: cover;
   display: inline-block;
-  // margin-bottom: 32px;
   background-repeat: no-repeat;
   background-position: center;
-
   position: absolute;
-
   top: -140px;
   left: 50%;
-
   transform: translateX(-50%);
-
   @include tablet {
     width: 224px;
     height: 224px;
@@ -126,70 +112,58 @@
     top: -260px;
   }
 }
+
 .product__subtitle--cream::before {
   background-image: url(../images/products/products-img1.png);
-
   @include retina {
     background-image: url(../images/products/products-img1-2x.png);
   }
-
   @include tablet {
     background-image: url(../images/products/products-tab-1.png);
-
     @include retina {
       background-image: url(../images/products/products-tab-1-2x.png);
     }
   }
-
   @include desktop {
     background-image: url(../images/products/products-desktop-1.png);
-
     @include retina {
       background-image: url(../images/products/products-desktop-1-2x.png);
     }
   }
 }
+
 .product__subtitle--coffee::before {
   background-image: url(../images/products/products-img2.png);
-
   @include retina {
     background-image: url(../images/products/products-img2-2x.png);
   }
-
   @include tablet {
     background-image: url(../images/products/products-tab-2.png);
-
     @include retina {
       background-image: url(../images/products/products-tab-2-2x.png);
     }
   }
-
   @include desktop {
     background-image: url(../images/products/products-desktop-2.png);
-
     @include retina {
       background-image: url(../images/products/products-desktop-2-2x.png);
     }
   }
 }
+
 .product__subtitle--milshakes::before {
   background-image: url(../images/products/products-img3.png);
-
   @include retina {
     background-image: url(../images/products/products-img3-2x.png);
   }
-
   @include tablet {
     background-image: url(../images/products/products-tab-3.png);
-
     @include retina {
       background-image: url(../images/products/products-tab-3-2x.png);
     }
   }
-
   @include desktop {
     background-image: url(../images/products/products-desktop-3.png);
-
     @include retina {
       background-image: url(../images/products/products-desktop-3-2x.png);
     }
@@ -199,22 +173,23 @@
 .product__subtitle::after {
   content: '...';
   display: block;
-
   color: #fff;
   margin-top: 32px;
 }
+
 .product__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
-
   text-align: center;
   letter-spacing: 0.04em;
   margin-top: 32px;
-
   color: #ffffff;
   @include tablet {
     line-height: 1.76;
+  }
+  @include desktop {
+    font-size: 16px;
   }
 }
 
@@ -232,23 +207,23 @@
   transition: color $transition, background-color $transition;
   cursor: pointer;
   padding: 0;
-
   @include desktop {
     margin-top: 60px;
   }
 }
+
 .product__button:hover,
 .product__button:focus {
   color: #fff;
   background-color: $primary-accent-color;
 }
+
 .products__icon {
   fill: currentColor;
 }
 
 .actions {
   position: absolute;
-
   background-color: rgba(255, 245, 246, 0.8);
   opacity: 0;
   left: 0;
@@ -256,7 +231,6 @@
   padding: 15px 20px;
   width: 100%;
   pointer-events: none;
-
   transition: opacity $transition;
   @media screen and (min-width: 380px) {
     padding: 20px 25px;
@@ -273,9 +247,11 @@
     padding: 25px;
   }
 }
+
 .product__button:hover .actions {
   opacity: 1;
 }
+
 .actions__text {
   color: $secondary-text-color;
   font-size: 14px;
@@ -284,11 +260,9 @@
   @media screen and (min-width: 380px) {
     line-height: 1.6;
   }
-
   @include mobile {
     line-height: 1.6;
   }
-
   @include tablet {
     line-height: 1.36;
   }

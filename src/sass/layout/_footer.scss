@@ -16,6 +16,7 @@
     }
   }
 }
+
 .footer__name {
   text-align: left;
   margin-bottom: 40px;
@@ -23,6 +24,7 @@
     margin-bottom: 0;
   }
 }
+
 .footer__text {
   width: 232px;
   margin-bottom: 16px;
@@ -44,6 +46,7 @@
     margin-bottom: 16px;
   }
 }
+
 .footer__title {
   width: 200px;
   font-family: 'Titan One', cursive;
@@ -63,43 +66,26 @@
     width: 100%;
   }
 }
-.footer__contacts {
-  text-align: right;
-}
-.footer__contacts-box {
-  display: flex;
+
+.footer__contacts-soc {
   justify-content: flex-end;
   margin-bottom: 40px;
+  gap: 28px;
 }
-.footer__contacts-soc {
-  display: flex;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-.footer__contacts-item {
-  width: 32px;
-  height: 32px;
-  list-style: none;
 
-  &:not(:last-child) {
-    margin-right: 28px;
-  }
-  @include tablet {
-    width: 34px;
-    height: 34px;
-  }
+.footer__contacts-item {
+  width: 34px;
+  height: 34px;
 }
+
 .footer__contacts-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
   height: 100%;
   border-radius: 50%;
   background-color: #fea5bb;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: $primary-accent-color;
@@ -109,18 +95,20 @@
     fill: #ffffff;
   }
 }
+
 .footer__contacts-icon {
   fill: #fff5f6;
 }
+
 .footer__contacts-tel {
   display: flex;
   align-items: baseline;
   flex-wrap: nowrap;
   justify-content: flex-end;
 }
+
 .footer__contacts-text {
   margin-right: 4px;
-  font-family: inherit;
   font-weight: 700;
   font-size: 13px;
   line-height: 1.9;
@@ -133,8 +121,8 @@
     font-size: 16px;
   }
 }
+
 .footer__contacts-number {
-  font-family: inherit;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.9;
@@ -145,6 +133,7 @@
     letter-spacing: 0.02em;
   }
 }
+
 .footer__cooperation {
   text-align: center;
   padding-top: 16px;
@@ -152,8 +141,8 @@
   border-top: 1px solid #e1e1e1;
   @include tablet {
     display: flex;
-    align-items: center;
     justify-content: center;
+    gap: 3px;
     padding-top: 8px;
     padding-bottom: 4px;
   }
@@ -162,20 +151,8 @@
     padding-bottom: 4px;
   }
 }
+
 .footer__cooperation-text {
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.5;
-  color: $secondary-text-color;
-  @include tablet {
-    margin-right: 3px;
-    line-height: 1.9;
-    letter-spacing: 0.02em;
-  }
-}
-.footer__cooperation-row {
-  font-family: inherit;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;

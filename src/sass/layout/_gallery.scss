@@ -1,6 +1,10 @@
 .gallery {
   width: 100%;
   background-image: linear-gradient(to top, #fff 70%, #fff5f6);
+  @include desktop {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .gallery__list {
@@ -24,7 +28,6 @@
 .gallery__image {
   width: 100%;
   border-radius: 8px;
-
   @media screen and (min-width: 768px) {
     border-radius: 20px;
   }
@@ -48,7 +51,6 @@
   grid-column: col 2 / col 3;
   grid-row: row 2 / row 4;
 }
-
 .gallery__item3 {
   grid-column: col 2 / col 3;
   grid-row: row 4 / row 6;
