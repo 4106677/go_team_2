@@ -53,6 +53,7 @@
 
 .product__item {
   position: relative;
+  width: 280px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 24px;
@@ -65,9 +66,6 @@
   }
   &--green {
     background-color: #c2e297;
-  }
-  @include mobile {
-    width: 100%;
   }
   @include tablet {
     flex-basis: calc((100% - 32px) / 3);
