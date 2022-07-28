@@ -271,7 +271,8 @@
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.15);
   opacity: 1;
-  transition: opacity 300ms linear, visibility 300ms linear;
+  transition: transform 300ms linear, opacity 300ms linear,
+    visibility 300ms linear;
   &.is-hidden {
     opacity: 0;
     visibility: hidden;
