@@ -19,9 +19,6 @@
   }
 }
 
-.hero__wraper-btns {
-  display: flex;
-}
 .hero__title {
   position: relative;
   z-index: 2;
@@ -63,18 +60,17 @@
   }
 }
 
-.hero__button--red {
-  margin-right: 8px;
+.hero__wraper-btns {
+  gap: 8px;
 }
 
 .hero__button {
   position: relative;
   z-index: 2;
-  margin-left: 0;
+  margin: auto 0;
   font-size: 8px;
   line-height: 1.25;
   min-height: 24px;
-  width: auto;
   padding-left: 14px;
   padding-right: 14px;
 
