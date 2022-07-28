@@ -26,7 +26,7 @@
     menu: document.querySelector('[data-menu]'),
     body: document.querySelector('body'),
     home: document.querySelector('[data-home]'),
-    gallery: document.querySelector('[data-gallery]'),
+    advantages: document.querySelector('[data-advantages]'),
     about: document.querySelector('[data-about]'),
     products: document.querySelector('[data-products]'),
     contacts: document.querySelector('[data-contacts]'),
@@ -35,7 +35,7 @@
   refs.openMenuBtn.addEventListener('click', toggleMenu);
   refs.closeMenuBtn.addEventListener('click', toggleMenu);
   refs.home.addEventListener('click', toggleMenu);
-  refs.gallery.addEventListener('click', toggleMenu);
+  refs.advantages.addEventListener('click', toggleMenu);
   refs.about.addEventListener('click', toggleMenu);
   refs.products.addEventListener('click', toggleMenu);
   refs.contacts.addEventListener('click', toggleMenu);

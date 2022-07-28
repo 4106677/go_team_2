@@ -1,6 +1,6 @@
 .gallery {
   width: 100%;
-  background-image: linear-gradient(to top, #fff 70%, #fff5f6);
+  background-image: linear-gradient(to top, #fff 76%, #fff5f6 76%);
   @include desktop {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -17,11 +17,6 @@
   }
   @media screen and (min-width: 1200px) {
     gap: 8px;
-    max-width: 1200px;
-    padding-left: 94px;
-    padding-right: 94px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -36,6 +31,7 @@
 .gallery__item {
   transform: scale(1);
   z-index: 50;
+  cursor: pointer;
   transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1000ms;
   &:hover {
     z-index: 100;
