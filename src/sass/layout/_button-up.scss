@@ -1,0 +1,23 @@
+.button-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 200;
+  transform: rotate(-90deg);
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  background-color: #d4144455;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all $transition;
+  &:hover,
+  &:focus {
+    background-color: #d41444;
+  }
+  @include tablet {
+    bottom: 45px;
+  }
+}

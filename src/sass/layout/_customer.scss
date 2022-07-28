@@ -263,21 +263,6 @@
   background-repeat: no-repeat;
 }
 
-// .slider-list__item::after {
-//   content: '';
-//   position: absolute;
-//   right: 50%;
-//   left: 50%;
-//   transform: translate(-50%, 0%);
-
-//   width: 72px;
-//   height: 12px;
-//   bottom: 0px;
-
-//   background-image: url(../images/customer/slider-dots.svg);
-//   background-repeat: no-repeat;
-// }
-
 .slick-list {
   overflow: hidden;
 }
@@ -322,6 +307,7 @@
   background-position: center;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .slick-dots li.slick-active button {
